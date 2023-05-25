@@ -1,4 +1,4 @@
-# Beam-Dataset-SE
+# Semi-cursive Beams
 __A dataset about beams__
 
 The purpose of building up this dataset is for monocular image based 3D beam reconstruction.
