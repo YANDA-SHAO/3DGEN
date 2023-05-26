@@ -121,4 +121,4 @@ root
 ```
 
 # simple_support_beam_images
-
+![camera positions](/plot of camera position.png)
