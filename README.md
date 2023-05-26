@@ -1,5 +1,8 @@
 # Datasdet of Beams 
 __A synthetic mesh-image dataset for beams in structure engineering__
+<p align="center">
+  <img src="./beam_images.png" alt="beam images">
+</p>
 
 The purpose of building up this dataset is for monocular image based 3D beam reconstruction.
 
