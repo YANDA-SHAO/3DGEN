@@ -1,5 +1,5 @@
 # Datasdet of Beams 
-__A mesh-image dataset for beams in structure engineering__
+__A synthetic mesh-image dataset for beams in structure engineering__
 
 The purpose of building up this dataset is for monocular image based 3D beam reconstruction.
 
@@ -121,9 +121,56 @@ root
 ```
 
 # simple_support_beam_images
-The images of each deformed beam are rendered using the __Pyrender__ API and stored in this file. For each deformed beam, 
+The images of each deformed beam are rendered using the __Pyrender__ API and stored in this file. 
+
+For each deformed beam, we generated 120 synthetic cameras to capture images __(1920x1920)__ of the deformed beam. The camera locations were randomly sampled from a sphere surrounding the beam. The visualization below shows the possible camera positions:
 
 <p align="center">
   <img src="./camera_position.png" alt="camera positions">
 </p>
-sss
+
+This code below is used to generate random camera poses around a 3D object for rendering purposes.
+
+- __Function rotation_matrix(roll, pitch, yaw)__: This function generates a rotation matrix given roll, pitch, and yaw angles. The rotation matrix is used to rotate the camera around the object. The rotation is done in the order of roll (rotation about the x-axis), pitch (rotation about the y-axis), and yaw (rotation about the z-axis).
+- __Calculating the center and size of the mesh__: The center of the mesh is calculated as the mean of the mesh's bounds (the minimum and maximum coordinates of the mesh). The size of the mesh is calculated as the difference between the maximum and minimum coordinates of the mesh.
+- __Defining the distance of the camera from the center of the mesh__: The distance of the camera from the center of the mesh is set to be the maximum dimension of the mesh plus the z-coordinate of the center. This ensures that the camera is positioned far enough from the object to capture it fully in the frame.
+- __Generating random camera poses__: The code then enters a loop where it generates 120 random camera poses. For each pose, it randomly selects a yaw and pitch angle, and sets the roll angle to 0. It then calculates the position of the camera (eye) using these angles and the previously defined distance. The rotation matrix for the camera is calculated using the rotation_matrix(roll, pitch, yaw) function. Finally, the camera pose is constructed by setting the top-left 3x3 submatrix to the rotation matrix and the top-right 3x1 submatrix to the camera position. This 4x4 matrix represents the pose of the camera in homogeneous coordinates.
+
+```python
+# calculate the rotaion matrix of cameras based on roo, pitch and yaw angles.
+def rotation_matrix(roll, pitch, yaw):
+    R_x = np.array([[1, 0, 0],
+                    [0, np.cos(roll), -np.sin(roll)],
+                    [0, np.sin(roll), np.cos(roll)]])
+    R_y = np.array([[np.cos(pitch), 0, np.sin(pitch)],
+                    [0, 1, 0],
+                    [-np.sin(pitch), 0, np.cos(pitch)]])
+    R_z = np.array([[np.cos(yaw), -np.sin(yaw), 0],
+                    [np.sin(yaw), np.cos(yaw), 0],
+                    [0, 0, 1]])
+    R = np.dot(R_z, np.dot(R_y, R_x))
+    return R
+    
+# Get the center of the mesh
+mesh = trimesh.load_mesh(path)
+mesh = pyrender.Mesh.from_trimesh(mesh)
+bounds = mesh.bounds
+center = bounds.mean(axis=0)
+size = bounds[1] - bounds[0]
+
+# Define the distance of the camera from the center of the mesh
+distance = np.max(size) + center[2]
+
+#define intrisix matrix of the cameras
+camera = pyrender.PerspectiveCamera(yfov=np.pi / 3.0)
+    
+for k in range(120):
+    yaw = random.uniform(0, 2 * np.pi)  # random yaw angle
+    pitch = random.uniform(0, np.pi)  # random pitch angle
+    roll = 0  # you can change this as needed
+    eye = center + distance * np.array([np.sin(pitch) * np.cos(yaw), np.sin(pitch) * np.sin(yaw), np.cos(pitch)])
+    R = rotation_matrix(roll, pitch, yaw)
+    camera_pose = np.eye(4)
+    camera_pose[:3, :3] = R
+    camera_pose[:3, 3] = eye
+```
