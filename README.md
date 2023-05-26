@@ -121,6 +121,8 @@ root
 ```
 
 # simple_support_beam_images
+The images of each deformed beam are rendered using the __Pyrender__ API and stored in this file. For each deformed beam, 
+
 <p align="center">
   <img src="./camera_position.png" alt="camera positions">
 </p>
