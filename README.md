@@ -121,4 +121,6 @@ root
 ```
 
 # simple_support_beam_images
-![camera positions](/plot of camera position.png)
+<p align="center">
+  <img src="./camera_position.png" alt="camera positions">
+</p>
