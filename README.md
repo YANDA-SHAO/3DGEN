@@ -1,4 +1,4 @@
-# Datasdet of Beams 
+# Dataset of Beams 
 __A synthetic mesh-image dataset for beams in structure engineering__
 <p align="center">
   <img src="./beam_images.png" alt="beam images">
