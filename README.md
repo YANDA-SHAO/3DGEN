@@ -8,7 +8,7 @@ The purpose of building up this dataset is for monocular image based 3D beam rec
 
 The dataset can be download from the link below:
 
-[https://www.google.com/search?q=read+paper&rlz=1C1GCEA_enAU1032AU](https://studentcurtinedu-my.sharepoint.com/:f:/g/personal/19286158_student_curtin_edu_au/EtEpgOtY_39NuN2aE_KzVNoB4z2lCml4SXTYn5ML7TfSmg?e=F5hPMY)
+https://studentcurtinedu-my.sharepoint.com/:f:/g/personal/19286158_student_curtin_edu_au/EtEpgOtY_39NuN2aE_KzVNoB4z2lCml4SXTYn5ML7TfSmg?e=F5hPMY
 
 There are three folders in the dataset: __3D_models__, __Deformed_3D_models__, __images__, __Depth_Maps__.
 
