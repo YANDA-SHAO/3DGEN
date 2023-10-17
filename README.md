@@ -13,7 +13,7 @@ __IMPORTANT__
    paper: https://arxiv.org/abs/2302.01721. <br>
    GitHub: https://github.com/TEXTurePaper/TEXTurePaper. <br>
    Hugging Face Spaces: https://huggingface.co/spaces/TEXTurePaper/TEXTure.
-5. Image rendering: Image rendering can be achieved using either [Pyrender](fast/low quality) or [Blender](slow/high quality).
+5. Image rendering: Image rendering can be achieved using either Pyrender(fast/low quality) or Blender(slow/high quality).
 6. For metric depth estimation and 3D surface reconstruction, it's essential to use Blender.
 7. some excellent works can be followed: <br>
    LeReS: https://github.com/aim-uofa/AdelaiDepth/tree/main/LeReS <br>
