@@ -21,12 +21,12 @@ __A synthetic Mesh-Image-Depth dataset generation mehtod for civil structures__
 8. For monocular vision based 3D mesh reconstruction, Pyrender can be used to generate multi-view images. 
 
 # About this repository
-Beam-shaped meshes Generation code.
-Simple support beam and cantilever beam mesh generation code.
-Code for adjusting the camera pose.
-Code for rendering with Pyrender.
-Code for rendering with Blender.
-
+1. Beam-shaped meshes Generation code. <br>
+2. Simple support beam and cantilever beam mesh generation code.<br>
+3. Code for adjusting the camera pose.<br>
+4. Code for rendering with Pyrender.<br>
+5. Code for rendering with Blender.<br>
+6. Beam-Shaped Structure Dataset: This dataset includes 100 base beam meshes, 2,000 cantilever meshes, and 2,000 simple support beams. These meshes are derived from the base beam meshes. Additionally, depth maps and multi-view images of these meshes have been rendered using Blender.
 
 
 # Dataset of Beams 
