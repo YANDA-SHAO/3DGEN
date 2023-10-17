@@ -8,7 +8,7 @@ __A synthetic Mesh-Image-Depth dataset generation mehtod for civil structures__
 
 # IMPORTANT
 1. The repository contains purely Python code.
-2. 3D mesh generation: The mesh generation utilizes Trimesh or supports prebuilt mesh files in formats such as .obj, .ply, and other popular formats.
+2. 3D mesh generation: The mesh generation utilizes Trimesh and supports prebuilt mesh files in formats such as .obj, .ply, and other popular formats.
 3. Mesh rendering can be accessed at: <br>
    paper: https://arxiv.org/abs/2302.01721. <br>
    GitHub: https://github.com/TEXTurePaper/TEXTurePaper. <br>
@@ -26,7 +26,10 @@ __A synthetic Mesh-Image-Depth dataset generation mehtod for civil structures__
 3. Code for adjusting the camera pose.<br>
 4. Code for rendering with Pyrender.<br>
 5. Code for rendering with Blender.<br>
-6. Beam-Shaped Structure Dataset: This dataset includes 100 base beam meshes, 2,000 cantilever meshes, and 2,000 simple support beams. These meshes are derived from the base beam meshes. Additionally, depth maps and multi-view images of these meshes have been rendered using Blender.
+6. Beam-Shaped Structure Dataset: This dataset includes 100 base beam meshes, 2,000 cantilever meshes, and 2,000 simple support beams. These meshes are derived from the base beam meshes. Additionally, depth maps and multi-view images of these meshes have been rendered using Blender.<br>
+The dataset can be downloaded from the link below:
+Link: https://studentcurtinedu-my.sharepoint.com/:f:/g/personal/19286158_student_curtin_edu_au/EtEpgOtY_39NuN2aE_KzVNoB4z2lCml4SXTYn5ML7TfSmg?e=0oeSXV
+
 
 
 # Dataset of Beams 
