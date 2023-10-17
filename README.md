@@ -1,5 +1,5 @@
 # 3DGEN
-__A synthetic Mesh-Image-Depth dataset Generation mehtod for Civil Structures__
+__A synthetic Mesh-Image-Depth dataset generation mehtod for civil structures__
 
 
 <p align="center">
@@ -7,8 +7,14 @@ __A synthetic Mesh-Image-Depth dataset Generation mehtod for Civil Structures__
 </p>
 
 
-The code are python, few 
-Mesh: Trimesh
+
+1. The repository contains purely Python code.
+2. mesh_generation: The mesh generation utilizes Trimesh or supports prebuilt mesh files in formats such as .obj, .ply, and other popular formats.
+3. Mesh rendering can be accessed at:
+GitHub: https://github.com/TEXTurePaper/TEXTurePaper
+Hugging Face Spaces: https://huggingface.co/spaces/TEXTurePaper/TEXTure
+4. Image rendering: Image rendering can be achieved using Pyrender and Blender.
+
 
 
 # Dataset of Beams 
