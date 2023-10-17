@@ -26,8 +26,7 @@ __A synthetic Mesh-Image-Depth dataset generation mehtod for civil structures__
 3. Code for adjusting the camera pose.<br>
 4. Code for rendering with Pyrender.<br>
 5. Code for rendering with Blender.<br>
-6. Beam-Shaped Structure Dataset: This dataset includes 100 base beam meshes, 2,000 cantilever meshes, and 2,000 simple support beams. These meshes are derived from the base beam meshes. Additionally, depth maps and multi-view images of these meshes have been rendered using Blender.<br>
-The dataset can be downloaded from the link below:
+6. Beam-Shaped Structure Dataset: This dataset includes 100 base beam meshes, 2,000 cantilever meshes, and 2,000 simple support beams. These meshes are derived from the base beam meshes. Additionally, depth maps and multi-view images of these meshes have been rendered using Blender. The dataset can be downloaded from the link: <br>
 Link: https://studentcurtinedu-my.sharepoint.com/:f:/g/personal/19286158_student_curtin_edu_au/EtEpgOtY_39NuN2aE_KzVNoB4z2lCml4SXTYn5ML7TfSmg?e=0oeSXV
 
 
