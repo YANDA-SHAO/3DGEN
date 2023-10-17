@@ -6,7 +6,7 @@ __A synthetic Mesh-Image-Depth dataset generation mehtod for civil structures__
   <img src="./beam_images.png" alt="beam images">
 </p>
 
-__IMPORTANT__
+# IMPORTANT
 1. The repository contains purely Python code.
 2. 3D mesh generation: The mesh generation utilizes Trimesh or supports prebuilt mesh files in formats such as .obj, .ply, and other popular formats.
 3. Mesh rendering can be accessed at: <br>
@@ -19,6 +19,14 @@ __IMPORTANT__
    LeReS: https://github.com/aim-uofa/AdelaiDepth/tree/main/LeReS <br>
    MiDaS: https://github.com/isl-org/MiDaS <br>
 8. For monocular vision based 3D mesh reconstruction, Pyrender can be used to generate multi-view images. 
+
+# About this repository
+Beam-shaped meshes Generation code.
+Simple support beam and cantilever beam mesh generation code.
+Code for adjusting the camera pose.
+Code for rendering with Pyrender.
+Code for rendering with Blender.
+
 
 
 # Dataset of Beams 
