@@ -15,7 +15,7 @@ __IMPORTANT__
    Hugging Face Spaces: https://huggingface.co/spaces/TEXTurePaper/TEXTure.
 5. Image rendering: Image rendering can be achieved using either Pyrender(fast/low quality) or Blender(slow/high quality).
 6. For metric depth estimation and 3D surface reconstruction, it's essential to use Blender.
-7. some excellent works can be followed: <br>
+7. some excellent works can be followed for monocular depth estimation: <br>
    LeReS: https://github.com/aim-uofa/AdelaiDepth/tree/main/LeReS <br>
    MiDaS: https://github.com/isl-org/MiDaS <br>
 8. For monocular vision based 3D mesh reconstruction, Pyrender can be used to generate multi-view images. 
