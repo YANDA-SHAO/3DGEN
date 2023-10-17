@@ -8,12 +8,12 @@ __A synthetic Mesh-Image-Depth dataset generation mehtod for civil structures__
 
 __IMPORTANT__
 1. The repository contains purely Python code.
-2. mesh_generation: The mesh generation utilizes Trimesh or supports prebuilt mesh files in formats such as .obj, .ply, and other popular formats.
+2. 3D mesh generation: The mesh generation utilizes Trimesh or supports prebuilt mesh files in formats such as .obj, .ply, and other popular formats.
 3. Mesh rendering can be accessed at: <br>
    paper: https://arxiv.org/abs/2302.01721. <br>
    GitHub: https://github.com/TEXTurePaper/TEXTurePaper. <br>
    Hugging Face Spaces: https://huggingface.co/spaces/TEXTurePaper/TEXTure.
-5. Image rendering: Image rendering can be achieved using either Pyrender or Blender.
+5. Image rendering: Image rendering can be achieved using either Pyrender (fast/low quality) or Blender (slow/high quality).
 6. For metric depth estimation and 3D surface reconstruction, it's essential to use Blender.
 7. some excellent works can be followed: <br>
    LeReS: https://github.com/aim-uofa/AdelaiDepth/tree/main/LeReS <br>
