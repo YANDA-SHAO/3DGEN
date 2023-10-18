@@ -6,6 +6,16 @@ __A synthetic Mesh-Image-Depth dataset generation mehtod for civil structures__
   <img src="./beam_images.png" alt="beam images">
 </p>
 
+
+# About this repository
+1. Beam-shaped meshes Generation code. <br>
+2. Simple support beam and cantilever beam mesh generation code.<br>
+3. Code for adjusting the camera pose.<br>
+4. Code for rendering with Pyrender.<br>
+5. Code for rendering with Blender.<br>
+6. Beam-Shaped Structure Dataset: This dataset includes 900 base beam meshes, 36,000 cantilever meshes, and 36,000 simple support beams. These meshes are derived from the base beam meshes. Additionally, depth maps and multi-view images of these meshes have been rendered using Blender. The dataset can be downloaded from the link: <br>
+Link: https://studentcurtinedu-my.sharepoint.com/:f:/g/personal/19286158_student_curtin_edu_au/EtEpgOtY_39NuN2aE_KzVNoB4z2lCml4SXTYn5ML7TfSmg?e=0oeSXV
+
 # IMPORTANT
 1. The repository contains purely Python code.
 2. 3D mesh generation: The mesh generation utilizes Trimesh and supports prebuilt mesh files in formats such as .obj, .ply, and other popular formats.
@@ -19,15 +29,6 @@ __A synthetic Mesh-Image-Depth dataset generation mehtod for civil structures__
    LeReS: https://github.com/aim-uofa/AdelaiDepth/tree/main/LeReS <br>
    MiDaS: https://github.com/isl-org/MiDaS <br>
 8. For monocular vision based 3D mesh reconstruction, Pyrender can be used to generate multi-view images. 
-
-# About this repository
-1. Beam-shaped meshes Generation code. <br>
-2. Simple support beam and cantilever beam mesh generation code.<br>
-3. Code for adjusting the camera pose.<br>
-4. Code for rendering with Pyrender.<br>
-5. Code for rendering with Blender.<br>
-6. Beam-Shaped Structure Dataset: This dataset includes 900 base beam meshes, 36,000 cantilever meshes, and 36,000 simple support beams. These meshes are derived from the base beam meshes. Additionally, depth maps and multi-view images of these meshes have been rendered using Blender. The dataset can be downloaded from the link: <br>
-Link: https://studentcurtinedu-my.sharepoint.com/:f:/g/personal/19286158_student_curtin_edu_au/EtEpgOtY_39NuN2aE_KzVNoB4z2lCml4SXTYn5ML7TfSmg?e=0oeSXV
 
 
 
