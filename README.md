@@ -1,4 +1,4 @@
-# 3DGEN
+# 3DGEN (UPDATING)
 __A synthetic Mesh-Image-Depth dataset generation mehtod for civil structures__
 
 
