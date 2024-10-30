@@ -37,12 +37,14 @@ __A synthetic mesh-image dataset for beams in structure engineering__
 The purpose of building up this dataset is for monocular image based 3D beam reconstruction.
 
 The dataset can be download from the link below:
-assets:
+3D assets:
+
 including original beams and defromed beams
 https://curtin-my.sharepoint.com/:f:/g/personal/19286158_student_curtin_edu_au/EtTbYaoDE1IYhPK5hIrW20cBYrumpMoqbx3Ta_Mt4GZNmA?e=BLNlLq
 
 images and depth maps:
-they are located in seven folders
+
+They are located in seven folders, each folder contains depth maps and images
 
 https://curtin-my.sharepoint.com/:f:/g/personal/19286158_student_curtin_edu_au/EpwhpWeMSIpMkC67puGjq4YBOgy4OJxxi7r_pqCE69z8RQ?e=7RzEF0
 https://curtin-my.sharepoint.com/:f:/g/personal/19286158_student_curtin_edu_au/EolQcyaEmHJBs8Ux1ugCzTYB4O7TOcOVDeRjAp4Ptjcoyw?e=i8qKzX
@@ -52,9 +54,6 @@ https://curtin-my.sharepoint.com/:f:/g/personal/19286158_student_curtin_edu_au/E
 https://curtin-my.sharepoint.com/:f:/g/personal/19286158_student_curtin_edu_au/Ensu90YexH9KqvIgmSmx6ZcB2kdnp5ufKe-34esorAwULA?e=Js7LER
 https://curtin-my.sharepoint.com/:f:/g/personal/19286158_student_curtin_edu_au/Eq46RYYJVcQmabaEJqmLUGEB75hOJjIOmZvmejwoPYSruQ?e=shrSFC
 
-
-
-There are three folders in the dataset: __3D_models__, __Deformed_3D_models__, __images__, __Depth_Maps__.
 
 
 The generative 3D mesh texturing can be found from:
